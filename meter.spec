@@ -1,5 +1,5 @@
 Summary:	Mete out time to a child process
-Summary(pl):	Wymierz czas procesowi potomnemu
+Summary(pl):	Wymierzanie czasu procesowi potomnemu
 Name:		meter
 Version:	0.0
 Release:	1
@@ -11,22 +11,27 @@ URL:		http://cyberknights.com.au/software/meter
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-A small utility to terminate child process after specified amount of time.
+A small utility to terminate child process after specified amount of
+time.
 
 %description -l pl
-Ma³e narzêdzie do zakoñczenia procesu potomnego po up³yniêciu okre¶lonego
-czasu.
+Ma³e narzêdzie do zakoñczenia procesu potomnego po up³yniêciu
+okre¶lonego czasu.
 
 %prep
 %setup -q -c
 
 %build
 rm -f meter
-%{__make} CFLAGS="%{rpmcflags}" LDFLAGS="%{rpmldflags}" meter
+
+%{__make} meter \
+	CFLAGS="%{rpmcflags}" \
+	LDFLAGS="%{rpmldflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install meter $RPM_BUILD_ROOT%{_bindir}
 
 %clean
