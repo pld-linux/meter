@@ -3,7 +3,7 @@ Summary(pl):	Wymierzanie czasu procesowi potomnemu
 Name:		meter
 Version:	0.0
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/System
 Source0:	http://cyberknights.com.au/software/meter/%{name}-%{version}.tar.gz
 # Source0-md5:	a807f0081e6ff7277cd0ec8c37c5c52d
