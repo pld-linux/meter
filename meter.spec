@@ -1,5 +1,5 @@
 Summary:	Mete out time to a child process
-Summary(pl):	Wymierzanie czasu procesowi potomnemu
+Summary(pl.UTF-8):   Wymierzanie czasu procesowi potomnemu
 Name:		meter
 Version:	0.0
 Release:	1
@@ -14,9 +14,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 A small utility to terminate child process after specified amount of
 time.
 
-%description -l pl
-Ma³e narzêdzie do zakoñczenia procesu potomnego po up³yniêciu
-okre¶lonego czasu.
+%description -l pl.UTF-8
+MaÅ‚e narzÄ™dzie do zakoÅ„czenia procesu potomnego po upÅ‚yniÄ™ciu
+okreÅ›lonego czasu.
 
 %prep
 %setup -q -c
