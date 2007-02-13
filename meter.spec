@@ -1,5 +1,5 @@
 Summary:	Mete out time to a child process
-Summary(pl.UTF-8):   Wymierzanie czasu procesowi potomnemu
+Summary(pl.UTF-8):	Wymierzanie czasu procesowi potomnemu
 Name:		meter
 Version:	0.0
 Release:	1
